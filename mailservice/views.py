@@ -79,4 +79,3 @@ class NewsletterSubscriptionView(APIView):
         msg.send()
 
         return Response({"message": "Subscription successful. Welcome email sent!"}, status=status.HTTP_200_OK)
-
