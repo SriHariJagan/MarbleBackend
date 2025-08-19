@@ -40,7 +40,7 @@ class EnquiryView(APIView):
                 subject=subject,
                 body="Please see the details below.",
                 from_email=data.get('email', 'no-reply@example.com'),  # default if missing
-                to=["sriharijagan333@gmail.com"],
+                to=["jkgranimarmo@hotmail.com", "jkgranimarmoksg@gmail.com", "sriharijagan07@gmail.com"],
             )
             msg.attach_alternative(html_content, "text/html")
             msg.send()
@@ -79,3 +79,4 @@ class NewsletterSubscriptionView(APIView):
         msg.send()
 
         return Response({"message": "Subscription successful. Welcome email sent!"}, status=status.HTTP_200_OK)
+
