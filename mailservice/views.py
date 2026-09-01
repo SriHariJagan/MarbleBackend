@@ -40,7 +40,7 @@ class EnquiryView(APIView):
                 subject=subject,
                 body="Please see the details below.",
                 from_email=data.get('email', 'no-reply@example.com'),  # default if missing
-                to=["jkgranimarmo@hotmail.com", "jkgranimarmoksg@gmail.com", "sriharijagan07@gmail.com"],
+                to=["jkgranimarmo@hotmail.com", "jkgranimarmoksg@gmail.com", "sriharijagan07@gmail.com", "pilani.deepak@gmail.com", "sureshkt@surrvik.com"],
             )
             msg.attach_alternative(html_content, "text/html")
             msg.send()
